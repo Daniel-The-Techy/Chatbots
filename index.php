@@ -60,10 +60,8 @@ $(document).ready(function() {
             success: function(result) {
                 $reply = '<div class="users-reply"><p id="reply">' + result + '</p></div>';
                 $('#Message').append($reply);
-                //$('#Message').scrollTop($('#Message').scrollHeight);
-                //  var data=JSON.parse(data);
-                //  console.log(data);
-                // $('#Message').html(data);
+                $('#Message').scrollTop($('#Message').scrollHeight);
+               
 
             }
         })
