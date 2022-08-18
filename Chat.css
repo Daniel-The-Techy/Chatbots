@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8faf7;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+.wrapper{
+    position: relative;
+    background-color:#fff;
+    width:450px;
+    min-height:80vh;
+    margin:0 auto;
+    top: 50px;
+    border-radius: 5px;
+}
+:is(#Message)::-webkit-scrollbar{
+    width:0px;
+}
+.users-details{
+    display: flex;
+    background-color: rgb(60, 223, 10);
+    height:50px;
+    opacity: 0.8;
+    color: #fff;
+}
+.users{
+    position: relative;
+    top: 10px;
+    left:8px;
+}
+ form{
+  display: flex;
+    justify-content:space-between;
+    padding:10px 20px;
+}
+input{
+    background-color: #fff;
+    padding:8px;
+    border-radius:4px;
+    width:calc(100% - 55px);
+    outline: none;
+    border-radius: 12px 0px 9px 0px;
+    border:1px solid gray;
+}
+button{
+    width:59px;
+    border-radius:0 8px 8px 0;
+    border: none;
+    outline: none;
+    background-color: rgb(46, 240, 12);
+    cursor: pointer;
+}
+img{
+    width:40px;
+    height:40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-top: 5px;
+    filter: grayscale(100%);
+}
+#Message{
+    display: flex;
+    flex-direction: column;
+    padding:20px 15px;
+    min-height: 430px;
+    max-height: 430px;
+    overflow-y: auto;
+    max-width: 100%;
+}
+.users-message{
+    align-self: flex-start;
+    color: #fff;
+    background-color: rgb(12, 30, 195);
+    border-radius:18px 18px 0 18px;
+    text-align: center;
+    margin-bottom: 20px;
+     padding:12px;
+}
+.users-message p{
+    margin-top: 4px;
+}
+.users-reply{
+    align-self: flex-end;
+    color: #fff;
+    background-color: rgb(65, 235, 14);
+    border-radius:18px 18px 0 18px;
+    text-align: center;
+    padding:12px;
+    margin-bottom: 20px;
+}
+.users-reply p{
+     margin-top: 4px;
+}
+.Chat-rules p{
+    text-align: center;
+}
